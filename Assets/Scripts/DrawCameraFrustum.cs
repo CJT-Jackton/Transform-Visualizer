@@ -61,9 +61,6 @@ public class DrawCameraFrustum : MonoBehaviour
             clipSpaceFarCorner[i] = _camera.transform.position + worldSpaceFarCorner[i];
             clipSpaceFarCorner[i].w = 1.0f;
             clipSpaceFarCorner[i] = _matrix*(clipSpaceFarCorner[i]);
-
-            Debug.Log(clipSpaceNearCorner[i]);
-            Debug.Log(clipSpaceFarCorner[i]);
         }
 
         for (int i = 0; i < 4; ++i)
